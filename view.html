@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style></style>
+    <script>
+
+        function searching() {
+            alert("서버와 연결되어 있지 않습니다.");
+        }
+
+        function movepagefirst() {
+        }
+
+        function movepagelast() {
+        }
+
+        function movepage() {
+        }
+
+        function movepagenext() {
+        }
+
+        function movepagefinal() {
+        }
+
+        function deleteitem() {
+            if (!confirm("정말 삭제하시겠습니까?(삭제한 내용은 복구할 수 없습니다.)")) {
+                alert("취소되었습니다.");
+            } else {
+                var link = './index.html';
+                location.href=link;
+                alert("삭제가 완료되었습니다.");
+            }
+        }
+
+    </script>
+    <link href="my.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+
+        <div class="headcontainer">
+            <header>
+              
+                <span class="headtitle" onclick="location.href='index.html'">
+                    <a class="title1">Phone Number List</a>
+                </span>
+        
+                <span class="headdomain">
+                    <a onclick="location.href='index.html'" class="domainlink">Home</a>
+                    <a onclick="location.href='#'" class="domainlink">Nostyle</a>
+                    <a onclick="location.href='#'" class="domainlink">List</a>
+                    <a onclick="location.href='#'" class="domainlink">About</a>
+                </span>
+
+            </header>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="viewcontainer">
+            <div>
+                <div class="viewcontainertop" width="100%" cellspacing="0" cellpadding="0">
+
+                   
+                    <div class="viewtitle">
+                        <span class="nametitle"> 
+                            <span class="name">홍길동</span>
+                            <span>의 정보</span>
+                        </span>
+                        <span class="datetitle">
+                            <span>Date : </span>
+                            <span class="datevalue" value="">2023-10-10</span>
+                        </span>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="listcontainermiddle" width="100%" cellspacing="0" cellpadding="0">
+                        <div>
+                            <div class="listZ">
+                                <div class="viewlist">
+                                    <span width="" class="listTitleBorder">
+                                        <span class="no">No.1</span>
+                                    </sapn>
+                                    <span width="100" class="viewTitleBorder">
+                                        <button onclick="deleteitem()">Delete</button>
+                                    </span>
+                                    <span width="100" class="viewTitleBorder">
+                                        <button onclick="location.href='edit.html'">Edit</button>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="viewbox">
+                                <div class="viewBody">
+                                    <span>이름 : </span>
+                                    <span>홍길동</span>
+                                </div>
+                                <div class="viewBody">
+                                    <span>관계 : </span>
+                                    <span>친구</span>
+                                </div>
+                                <div class="viewBody">
+                                    <span>전화번호 : </span>
+                                    <span>010-2245-5555</span>
+                                </div>
+                                <div class="viewBody">
+                                    <span>이메일 : </span>
+                                    <span>22100554@handong.ac.kr</span>
+                                </div>
+                                <div class="viewBody">
+                                    <span>생일 : </span>
+                                    <span>10/45</span>
+                                </div>
+                                <div class="viewBody">
+                                    <span>주소 : </span>
+                                    <span>서울 강원 용인 인천</span>
+                                </div>
+
+                                <div>
+                                    <div>메모 :</div>
+                                    <div>
+                                        애국가 합창 음원 1~4절 가사
+                                        1. 동해물과 백두산이 마르고 닳도록
+                                        하느님이 보우하사 우리나라 만세
+                                        무궁화 삼천리 화려 강산
+                                        대한 사람 대한으로 길이 보전하세
+                                        2. 남산 위에 저 소나무 철갑을 두른 듯
+                                        바람 서리 불변함은 우리 기상일세
+                                        무궁화 삼천리 화려 강산
+                                        대한 사람 대한으로 길이 보전하세
+                                        3. 가을 하늘 공활한데 높고 구름 없이
+                                        밝은 달은 우리 가슴 일편단심일세
+                                        무궁화 삼천리 화려 강산
+                                        대한 사람 대한으로 길이 보전하세
+                                        4. 이 기상과 이 맘으로 충성을 다하여
+                                        괴로우나 즐거우나 나라 사랑하세
+                                        무궁화 삼천리 화려 강산
+                                        대한 사람 대한으로 길이 보전하세
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="line"></div>
+
+                </div>
+            </div>
+        </div>
+
+        <span class="listcontainer">
+            <div>
+
+                <div class="listcontainertop" width="100%" cellspacing="0" cellpadding="0">
+
+                    <span class="listname">Friend List</span>
+
+                    <span class="search">
+                        <form name="form_s" method="get" action="_searchKey.php">
+                             
+                            <span class="serchkind">
+                                <select name="FindIt" class="input" id="FindIt">
+                                    <option value="name">이름</option>
+                                    <option value="relation">관계</option>
+                                    <option value="birth">생일</option>
+                                    <option value="house">주소</option>
+                                </select>
+                            </span>
+                            <span class="searchbox" id="searchingbox">
+                                <input name="FindText" type="text" class="input" id="FindText" size="10" maxlength="50" value="">
+                            </span>
+                            <span class="searchbutton">
+                                <button type="button" width="100" height="50" class="clickbutton" onclick="searching()">Search</button>
+                            </span>
+                                
+                        </form>
+                    </span>
+
+
+                </div>
+
+                <div class="line"></div>
+
+                <table class="listcontainermiddle" width="100%" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr class="listZ">
+                            <td width="100" class="listTitleBorder">
+                                <div>이름</div>
+                            </td>
+                            <td width="100" class="listTitleBorder">
+                                <div>관계</div>
+                            </td>
+                            <td width="210" class="listTitleBorder">
+                                <div>전화번호</div>
+                            </td>
+                            <td width="250" class="listTitleBorder">
+                                <div>이메일</div>
+                            </td>
+                            <td width="100" class="listTitleBorder">
+                                <div>생일</div>
+                            </td>
+                            <td width="" class="listTitleBorder">
+                                <div>주소</div>
+                            </td>
+                        </tr>
+
+                        <tr class="listA" onclick="location.href='view.html'">
+                            <td class="listBody">
+                                <div>홍길동</div>
+                            </td>
+                            <td class="listBody">
+                                <div>친구</div>
+                            </td>
+                            <td class="listBody">
+                                <div>010-2245-5555</div>
+                            </td>
+                            <td class="listBody">
+                                <div>22100554@handong.ac.kr</div>
+                            </td>
+                            <td class="listBody">
+                                <div>10/45</div>
+                            </td>
+                            <td class="listBody">
+                                <div>서울 강원 용인 인천</div>
+                            </td>
+                        </tr>
+
+                        <tr class="listB" onclick="location.href='view.html'">
+                            <td class="listBody">
+                                <div>홍길동</div>
+                            </td>
+                            <td class="listBody">
+                                <div>친구</div>
+                            </td>
+                            <td class="listBody">
+                                <div>010-2245-5555</div>
+                            </td>
+                            <td class="listBody">
+                                <div>22100554@handong.ac.kr</div>
+                            </td>
+                            <td class="listBody">
+                                <div>10/45</div>
+                            </td>
+                            <td class="listBody">
+                                <div>서울 강원 용인 인천</div>
+                            </td>
+                        </tr>
+
+                        <tr class="listA" onclick="location.href='view.html'">
+                            <td class="listBody">
+                                <div>홍길동</div>
+                            </td>
+                            <td class="listBody">
+                                <div>친구</div>
+                            </td>
+                            <td class="listBody">
+                                <div>010-2245-5555</div>
+                            </td>
+                            <td class="listBody">
+                                <div>22100554@handong.ac.kr</div>
+                            </td>
+                            <td class="listBody">
+                                <div>10/45</div>
+                            </td>
+                            <td class="listBody">
+                                <div>서울 강원 용인 인천</div>
+                            </td>
+                        </tr>
+
+                        <tr class="listB" onclick="location.href='view.html'">
+                            <td class="listBody">
+                                <div>홍길동</div>
+                            </td>
+                            <td class="listBody">
+                                <div>친구</div>
+                            </td>
+                            <td class="listBody">
+                                <div>010-2245-5555</div>
+                            </td>
+                            <td class="listBody">
+                                <div>22100554@handong.ac.kr</div>
+                            </td>
+                            <td class="listBody">
+                                <div>10/45</div>
+                            </td>
+                            <td class="listBody">
+                                <div>서울 강원 용인 인천</div>
+                            </td>
+                        </tr>
+
+                        <tr class="listA" onclick="location.href='view.html'">
+                            <td class="listBody">
+                                <div>홍길동</div>
+                            </td>
+                            <td class="listBody">
+                                <div>친구</div>
+                            </td>
+                            <td class="listBody">
+                                <div>010-2245-5555</div>
+                            </td>
+                            <td class="listBody">
+                                <div>22100554@handong.ac.kr</div>
+                            </td>
+                            <td class="listBody">
+                                <div>10/45</div>
+                            </td>
+                            <td class="listBody">
+                                <div>서울 강원 용인 인천</div>
+                            </td>
+                        </tr>
+
+                        <tr class="listB" onclick="location.href='view.html'">
+                            <td class="listBody">
+                                <div>홍길동</div>
+                            </td>
+                            <td class="listBody">
+                                <div>친구</div>
+                            </td>
+                            <td class="listBody">
+                                <div>010-2245-5555</div>
+                            </td>
+                            <td class="listBody">
+                                <div>22100554@handong.ac.kr</div>
+                            </td>
+                            <td class="listBody">
+                                <div>10/45</div>
+                            </td>
+                            <td class="listBody">
+                                <div>서울 강원 용인 인천</div>
+                            </td>
+                        </tr>
+
+                        <tr class="listA" onclick="location.href='view.html'">
+                            <td class="listBody">
+                                <div>홍길동</div>
+                            </td>
+                            <td class="listBody">
+                                <div>친구</div>
+                            </td>
+                            <td class="listBody">
+                                <div>010-2245-5555</div>
+                            </td>
+                            <td class="listBody">
+                                <div>22100554@handong.ac.kr</div>
+                            </td>
+                            <td class="listBody">
+                                <div>10/45</div>
+                            </td>
+                            <td class="listBody">
+                                <div>서울 강원 용인 인천</div>
+                            </td>
+                        </tr>
+
+                        <tr class="listB" onclick="location.href='view.html'">
+                            <td class="listBody">
+                                <div>홍길동</div>
+                            </td>
+                            <td class="listBody">
+                                <div>친구</div>
+                            </td>
+                            <td class="listBody">
+                                <div>010-2245-5555</div>
+                            </td>
+                            <td class="listBody">
+                                <div>22100554@handong.ac.kr</div>
+                            </td>
+                            <td class="listBody">
+                                <div>10/45</div>
+                            </td>
+                            <td class="listBody">
+                                <div>서울 강원 용인 인천</div>
+                            </td>
+                        </tr>
+
+                        <tr class="listA" onclick="location.href='view.html'">
+                            <td class="listBody">
+                                <div>홍길동</div>
+                            </td>
+                            <td class="listBody">
+                                <div>친구</div>
+                            </td>
+                            <td class="listBody">
+                                <div>010-2245-5555</div>
+                            </td>
+                            <td class="listBody">
+                                <div>22100554@handong.ac.kr</div>
+                            </td>
+                            <td class="listBody">
+                                <div>10/45</div>
+                            </td>
+                            <td class="listBody">
+                                <div>서울 강원 용인 인천</div>
+                            </td>
+                        </tr>
+
+                        <tr class="listB" onclick="location.href='view.html'">
+                            <td class="listBody">
+                                <div>홍길동</div>
+                            </td>
+                            <td class="listBody">
+                                <div>친구</div>
+                            </td>
+                            <td class="listBody">
+                                <div>010-2245-5555</div>
+                            </td>
+                            <td class="listBody">
+                                <div>22100554@handong.ac.kr</div>
+                            </td>
+                            <td class="listBody">
+                                <div>10/45</div>
+                            </td>
+                            <td class="listBody">
+                                <div>서울 강원 용인 인천</div>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td height="1" colspan="6"></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <div class="line"></div>
+
+                <div class="listcontainerbottom">
+                    <div class="tenpages">
+                        <table width="100%" cellpadding="0" cellspacing="0" class="tab">
+                            <tbody height="25">
+                                <span class="nowpage" name="nowpage" values="1"></span>
+                                <span>
+                                    <img src="./image/button_first.png" width="10" height="10" onclick="movepagefirst()">
+                                    <img src="./image/button_last.png" width="10" height="10" onclick="movepagelast()"> 
+                                </span>
+                                <span>
+                                    <a class="pageBody" onclick="movepage(1)"><b>1</b></a>
+                                    <strong>ㆍ</strong> 
+                                    <a class="pageBody" onclick="movepage(2)"><b>2</b></a>
+                                    <strong>ㆍ</strong> 
+                                    <a class="pageBody" onclick="movepage(3)"><b>3</b></a>
+                                    <strong>ㆍ</strong> 
+                                    <a class="pageBody" onclick="movepage(4)"><b>4</b></a>
+                                    <strong>ㆍ</strong> 
+                                    <a class="pageBody" onclick="movepage(5)"><b>5</b></a>
+                                    <strong>ㆍ</strong> 
+                                    <a class="pageBody" onclick="movepage(6)"><b>6</b></a>
+                                    <strong>ㆍ</strong> 
+                                    <a class="pageBody" onclick="movepage(7)"><b>7</b></a>
+                                    <strong>ㆍ</strong> 
+                                    <a class="pageBody" onclick="movepage(8)"><b>8</b></a>
+                                    <strong>ㆍ</strong> 
+                                    <a class="pageBody" onclick="movepage(9)"><b>9</b></a>
+                                    <strong>ㆍ</strong> 
+                                    <a class="pageBody" onclick="movepage(10)"><b>10</b></a>
+                                </span>
+                                <span>
+                                    <img src="./image/button_next.png" width="10" height="10" onclick="movepagenext()">
+                                    <img src="./image/button_final.png" width="10" height="10" onclick="movepagefinal()">
+                                </span>
+
+                                <span>
+                                    <button class="addbutton" onclick="location.href='add.html'">add</button>
+                                </span>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </span>
+    </div>
+
+    <div class="footer">
+        <div class="footerbox">
+            <div class="line"></div>
+            <a class="footertext1"># Made by 22100699 DohyeonCho 조도현 #</a>
+            <a class="footertext2">@ 2023 - 10 - 10 @</a>
+        </div>
+    </div>
+</body>
+</html>

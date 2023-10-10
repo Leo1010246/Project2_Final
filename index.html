@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style></style>
+    <script>
+
+        function searching() {
+            alert("서버와 연결되어 있지 않습니다.");
+        }
+
+        function movepagefirst() {
+        }
+
+        function movepagelast() {
+        }
+
+        function movepage() {
+        }
+
+        function movepagenext() {
+        }
+
+        function movepagefinal() {
+        }
+
+    </script>
+    <link href="my.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+
+        <div class="headcontainer">
+            <header>
+              
+                <span class="headtitle" onclick="location.href='index.html'">
+                    <a class="title1">Phone Number List</a>
+                </span>
+        
+                <span class="headdomain">
+                    <a onclick="location.href='index.html'" class="domainlink">Home</a>
+                    <a onclick="location.href='#'" class="domainlink">Nostyle</a>
+                    <a onclick="location.href='#'" class="domainlink">List</a>
+                    <a onclick="location.href='#'" class="domainlink">About</a>
+                </span>
+
+            </header>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <span class="listcontainer">
+            <div>
+
+                <div class="listcontainertop" width="100%" cellspacing="0" cellpadding="0">
+
+                    <span class="listname">Friend List</span>
+
+                    <span class="search">
+                        <form name="form_s" method="get" action="_searchKey.php">
+                             
+                            <span class="serchkind">
+                                <select name="FindIt" class="input" id="FindIt">
+                                    <option value="name">이름</option>
+                                    <option value="relation">관계</option>
+                                    <option value="birth">생일</option>
+                                    <option value="house">주소</option>
+                                </select>
+                            </span>
+                            <span class="searchbox" id="searchingbox">
+                                <input name="FindText" type="text" class="input" id="FindText" size="10" maxlength="50" value="">
+                            </span>
+                            <span class="searchbutton">
+                                <button type="button" width="100" height="50" class="clickbutton" onclick="searching()">Search</button>
+                            </span>
+                                
+                        </form>
+                    </span>
+
+
+                </div>
+
+                <div class="line"></div>
+
+                <table class="listcontainermiddle" width="100%" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr class="listZ">
+                            <td width="100" class="listTitleBorder">
+                                <div>이름</div>
+                            </td>
+                            <td width="100" class="listTitleBorder">
+                                <div>관계</div>
+                            </td>
+                            <td width="210" class="listTitleBorder">
+                                <div>전화번호</div>
+                            </td>
+                            <td width="250" class="listTitleBorder">
+                                <div>이메일</div>
+                            </td>
+                            <td width="100" class="listTitleBorder">
+                                <div>생일</div>
+                            </td>
+                            <td width="" class="listTitleBorder">
+                                <div>주소</div>
+                            </td>
+                        </tr>
+
+                        <tr class="listA" onclick="location.href='view.html'">
+                            <td class="listBody">
+                                <div>홍길동</div>
+                            </td>
+                            <td class="listBody">
+                                <div>친구</div>
+                            </td>
+                            <td class="listBody">
+                                <div>010-2245-5555</div>
+                            </td>
+                            <td class="listBody">
+                                <div>22100554@handong.ac.kr</div>
+                            </td>
+                            <td class="listBody">
+                                <div>10/45</div>
+                            </td>
+                            <td class="listBody">
+                                <div>서울 강원 용인 인천</div>
+                            </td>
+                        </tr>
+
+                        <tr class="listB" onclick="location.href='view.html'">
+                            <td class="listBody">
+                                <div>홍길동</div>
+                            </td>
+                            <td class="listBody">
+                                <div>친구</div>
+                            </td>
+                            <td class="listBody">
+                                <div>010-2245-5555</div>
+                            </td>
+                            <td class="listBody">
+                                <div>22100554@handong.ac.kr</div>
+                            </td>
+                            <td class="listBody">
+                                <div>10/45</div>
+                            </td>
+                            <td class="listBody">
+                                <div>서울 강원 용인 인천</div>
+                            </td>
+                        </tr>
+
+                        <tr class="listA" onclick="location.href='view.html'">
+                            <td class="listBody">
+                                <div>홍길동</div>
+                            </td>
+                            <td class="listBody">
+                                <div>친구</div>
+                            </td>
+                            <td class="listBody">
+                                <div>010-2245-5555</div>
+                            </td>
+                            <td class="listBody">
+                                <div>22100554@handong.ac.kr</div>
+                            </td>
+                            <td class="listBody">
+                                <div>10/45</div>
+                            </td>
+                            <td class="listBody">
+                                <div>서울 강원 용인 인천</div>
+                            </td>
+                        </tr>
+
+                        <tr class="listB" onclick="location.href='view.html'">
+                            <td class="listBody">
+                                <div>홍길동</div>
+                            </td>
+                            <td class="listBody">
+                                <div>친구</div>
+                            </td>
+                            <td class="listBody">
+                                <div>010-2245-5555</div>
+                            </td>
+                            <td class="listBody">
+                                <div>22100554@handong.ac.kr</div>
+                            </td>
+                            <td class="listBody">
+                                <div>10/45</div>
+                            </td>
+                            <td class="listBody">
+                                <div>서울 강원 용인 인천</div>
+                            </td>
+                        </tr>
+
+                        <tr class="listA" onclick="location.href='view.html'">
+                            <td class="listBody">
+                                <div>홍길동</div>
+                            </td>
+                            <td class="listBody">
+                                <div>친구</div>
+                            </td>
+                            <td class="listBody">
+                                <div>010-2245-5555</div>
+                            </td>
+                            <td class="listBody">
+                                <div>22100554@handong.ac.kr</div>
+                            </td>
+                            <td class="listBody">
+                                <div>10/45</div>
+                            </td>
+                            <td class="listBody">
+                                <div>서울 강원 용인 인천</div>
+                            </td>
+                        </tr>
+
+                        <tr class="listB" onclick="location.href='view.html'">
+                            <td class="listBody">
+                                <div>홍길동</div>
+                            </td>
+                            <td class="listBody">
+                                <div>친구</div>
+                            </td>
+                            <td class="listBody">
+                                <div>010-2245-5555</div>
+                            </td>
+                            <td class="listBody">
+                                <div>22100554@handong.ac.kr</div>
+                            </td>
+                            <td class="listBody">
+                                <div>10/45</div>
+                            </td>
+                            <td class="listBody">
+                                <div>서울 강원 용인 인천</div>
+                            </td>
+                        </tr>
+
+                        <tr class="listA" onclick="location.href='view.html'">
+                            <td class="listBody">
+                                <div>홍길동</div>
+                            </td>
+                            <td class="listBody">
+                                <div>친구</div>
+                            </td>
+                            <td class="listBody">
+                                <div>010-2245-5555</div>
+                            </td>
+                            <td class="listBody">
+                                <div>22100554@handong.ac.kr</div>
+                            </td>
+                            <td class="listBody">
+                                <div>10/45</div>
+                            </td>
+                            <td class="listBody">
+                                <div>서울 강원 용인 인천</div>
+                            </td>
+                        </tr>
+
+                        <tr class="listB" onclick="location.href='view.html'">
+                            <td class="listBody">
+                                <div>홍길동</div>
+                            </td>
+                            <td class="listBody">
+                                <div>친구</div>
+                            </td>
+                            <td class="listBody">
+                                <div>010-2245-5555</div>
+                            </td>
+                            <td class="listBody">
+                                <div>22100554@handong.ac.kr</div>
+                            </td>
+                            <td class="listBody">
+                                <div>10/45</div>
+                            </td>
+                            <td class="listBody">
+                                <div>서울 강원 용인 인천</div>
+                            </td>
+                        </tr>
+
+                        <tr class="listA" onclick="location.href='view.html'">
+                            <td class="listBody">
+                                <div>홍길동</div>
+                            </td>
+                            <td class="listBody">
+                                <div>친구</div>
+                            </td>
+                            <td class="listBody">
+                                <div>010-2245-5555</div>
+                            </td>
+                            <td class="listBody">
+                                <div>22100554@handong.ac.kr</div>
+                            </td>
+                            <td class="listBody">
+                                <div>10/45</div>
+                            </td>
+                            <td class="listBody">
+                                <div>서울 강원 용인 인천</div>
+                            </td>
+                        </tr>
+
+                        <tr class="listB" onclick="location.href='view.html'">
+                            <td class="listBody">
+                                <div>홍길동</div>
+                            </td>
+                            <td class="listBody">
+                                <div>친구</div>
+                            </td>
+                            <td class="listBody">
+                                <div>010-2245-5555</div>
+                            </td>
+                            <td class="listBody">
+                                <div>22100554@handong.ac.kr</div>
+                            </td>
+                            <td class="listBody">
+                                <div>10/45</div>
+                            </td>
+                            <td class="listBody">
+                                <div>서울 강원 용인 인천</div>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td height="1" colspan="6"></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <div class="line"></div>
+
+                <div class="listcontainerbottom">
+                    <div class="tenpages">
+                        <table width="100%" cellpadding="0" cellspacing="0" class="tab">
+                            <tbody height="25">
+                                <span class="nowpage" name="nowpage" values="1"></span>
+                                <span>
+                                    <img src="./image/button_first.png" width="10" height="10" onclick="movepagefirst()">
+                                    <img src="./image/button_last.png" width="10" height="10" onclick="movepagelast()"> 
+                                </span>
+                                <span>
+                                    <a class="pageBody" onclick="movepage(1)"><b>1</b></a>
+                                    <strong>ㆍ</strong> 
+                                    <a class="pageBody" onclick="movepage(2)"><b>2</b></a>
+                                    <strong>ㆍ</strong> 
+                                    <a class="pageBody" onclick="movepage(3)"><b>3</b></a>
+                                    <strong>ㆍ</strong> 
+                                    <a class="pageBody" onclick="movepage(4)"><b>4</b></a>
+                                    <strong>ㆍ</strong> 
+                                    <a class="pageBody" onclick="movepage(5)"><b>5</b></a>
+                                    <strong>ㆍ</strong> 
+                                    <a class="pageBody" onclick="movepage(6)"><b>6</b></a>
+                                    <strong>ㆍ</strong> 
+                                    <a class="pageBody" onclick="movepage(7)"><b>7</b></a>
+                                    <strong>ㆍ</strong> 
+                                    <a class="pageBody" onclick="movepage(8)"><b>8</b></a>
+                                    <strong>ㆍ</strong> 
+                                    <a class="pageBody" onclick="movepage(9)"><b>9</b></a>
+                                    <strong>ㆍ</strong> 
+                                    <a class="pageBody" onclick="movepage(10)"><b>10</b></a>
+                                </span>
+                                <span>
+                                    <img src="./image/button_next.png" width="10" height="10" onclick="movepagenext()">
+                                    <img src="./image/button_final.png" width="10" height="10" onclick="movepagefinal()">
+                                </span>
+
+                                <span>
+                                    <button class="addbutton" onclick="location.href='add.html'">add</button>
+                                </span>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </span>
+    </div>
+
+    <div class="footer">
+        <div class="footerbox">
+            <div class="line"></div>
+            <a class="footertext1"># Made by 22100699 DohyeonCho 조도현 #</a>
+            <a class="footertext2">@ 2023 - 10 - 10 @</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,222 @@
+
+@media only screen and (min-width: 600px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+@font-face {
+    font-family: 'dancing';
+    src: url('./font/Dancing_Script/DancingScript-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'gaegu';
+    src: url('./font/Gaegu/Gaegu-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    background-image: url("./image/background_wood.jpg");
+}
+
+.headcontainer {
+    margin: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg,rgba(93, 38, 6, 0.968),rgb(240, 156, 73));
+}
+
+.headtitle {
+    font-size: 250%;
+    font-weight: 1000;
+    text-decoration: none;
+    text-align: left;
+    margin: 3px;
+}
+
+.title1 {
+    color: azure;
+    font-family: "dancing";
+    margin: 0 10%;
+    text-transform: uppercase;
+}
+
+.headdomain {
+    font-size: 150%;
+    font-weight: 700;
+    text-decoration: none;
+    float: right;
+}
+
+.domainlink {
+    text-decoration: none;
+    color: white;
+    margin: 1px;
+    padding: 5px 11px;
+    border-radius: 10px;
+    background-image: url("./image/background_darkwood.jpg");
+}
+
+.domainlink:hover {
+    background-image: url("./image/img_black.jpg");
+}
+
+.row {
+    margin: 2% 7%;
+    padding: 100px 100px;
+    border-radius: 20px;
+    background-image: linear-gradient(rgb(250, 226, 199),rgb(224, 179, 120));
+}
+
+.viewtitle {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.name {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.datetitle {
+    float: right;
+}
+
+.no {
+    font-size: 30px;
+}
+
+.viewTitleBorder {
+    float: right;
+}
+
+.viewbox {
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+textarea {
+    width: 100%;
+}
+
+.star {
+    color: red;
+}
+
+.listcontainer {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.listcontainertop {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px 8px;
+    height: auto;
+}
+
+.listname {
+    font-size: 45px;
+    height: auto;
+}
+
+.search {
+    margin: 25px 0 0 0;
+    float: right;
+}
+
+.line {
+    height: 1.5px;
+    background-color: rgb(108, 56, 0);
+}
+
+.listcontainermiddle {
+    font-weight: bold;
+    font-family: "gaegu";
+    font-size: 17px;
+    padding: 5px 8px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    background-color: rgb(113, 80, 43);
+}
+
+.listTitleBorder {
+    padding: 5px;
+}
+
+.listBody {
+    padding: 15px 5px;
+}
+
+.listZ {
+    color: azure;
+}
+
+.listA {
+    background-color: rgb(243, 242, 242);
+}
+
+.listA:hover {
+    background-color: rgb(182, 182, 182);
+}
+
+.listB {
+    background-color: rgb(234, 226, 189);
+}
+
+.listB:hover {
+    background-color: rgb(182, 182, 182);
+}
+
+
+.listcontainerbottom {
+    padding: 16px 10px 0px 32%;
+}
+
+.addbutton {
+    float: right;
+    margin: -10px 0 0 0;
+    padding: 0;
+    height: 25px;
+    width: 40px;
+}
+
+.footerbox {
+    margin: 7% 5% 0 5%;
+    padding: 0% 14%;
+    border-radius: 10px;
+}
+
+.footertext1 {
+    padding: 5% 0;
+    color: rgb(0, 0, 0);
+}
+
+.footertext2 {
+    color: rgb(0, 0, 0);
+    float: right;
+}
